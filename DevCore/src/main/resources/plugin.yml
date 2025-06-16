@@ -1,0 +1,4 @@
+name: DevCore
+version: '${project.version}'
+main: me.boost183.devcore.DevCore
+api-version: '1.17'
