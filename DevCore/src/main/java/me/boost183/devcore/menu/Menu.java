@@ -26,6 +26,7 @@ public abstract class Menu implements InventoryHolder {
     protected Player p;
     protected Inventory inventory;
     protected ItemStack FILLER_GLASS = makeItem(Material.STAINED_GLASS_PANE, " ");
+    protected ItemStack WHITE_GLASS = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) 0);
 
     //Constructor for Menu. Pass in a PlayerMenuUtility so that
     // we have information on who's menu this is and
@@ -105,6 +106,29 @@ public abstract class Menu implements InventoryHolder {
         for (int i = 0; i < getSlots(); i++) {
             if (inventory.getItem(i) == null){
                 inventory.setItem(i, itemStack);
+            }
+        }
+    }
+
+    /**
+     *
+     * @param slots
+     * @param color
+     */
+
+    public void setMenuGlass(Integer slots, Short color){
+
+        ItemStack COLOR_GLASS = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) color);
+
+        for (int i = slots-8; i < slots; i++) {
+            if (inventory.getItem(i) == null){
+                inventory.setItem(i, WHITE_GLASS);
+            }
+        }
+
+        for (int i = 0; i < 8; i++) {
+            if (inventory.getItem(i) == null){
+                inventory.setItem(i, COLOR_GLASS);
             }
         }
     }
