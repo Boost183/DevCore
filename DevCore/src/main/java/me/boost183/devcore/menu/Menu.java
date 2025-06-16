@@ -120,13 +120,13 @@ public abstract class Menu implements InventoryHolder {
 
         ItemStack COLOR_GLASS = new ItemStack(Material.STAINED_GLASS_PANE, 1, (short) color);
 
-        for (int i = slots-8; i < slots; i++) {
+        for (int i = slots-9; i < slots; i++) {
             if (inventory.getItem(i) == null){
                 inventory.setItem(i, WHITE_GLASS);
             }
         }
 
-        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 9; i++) {
             if (inventory.getItem(i) == null){
                 inventory.setItem(i, COLOR_GLASS);
             }
