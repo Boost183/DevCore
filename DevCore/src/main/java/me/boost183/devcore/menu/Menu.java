@@ -122,9 +122,11 @@ public abstract class Menu implements InventoryHolder {
 
         ItemMeta COLOR_GLASS_META = COLOR_GLASS.getItemMeta();
         COLOR_GLASS_META.setDisplayName(" ");
+        COLOR_GLASS.setItemMeta(COLOR_GLASS_META);
 
         ItemMeta WHITE_GLASS_META = WHITE_GLASS.getItemMeta();
         WHITE_GLASS_META.setDisplayName(" ");
+        WHITE_GLASS.setItemMeta(WHITE_GLASS_META);
 
         for (int i = slots-9; i < slots; i++) {
             if (inventory.getItem(i) == null){
