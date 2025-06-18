@@ -1,5 +1,6 @@
 me\boost183\devcore\command\CommandManager.class
 me\boost183\devcore\menu\MenuListener.class
+me\boost183\devcore\chatinput\PlayerChatInput.class
 me\boost183\devcore\command\CoreCommand.class
 me\boost183\devcore\exceptions\MenuManagerException.class
 me\boost183\devcore\menu\Menu.class
@@ -8,7 +9,9 @@ me\boost183\devcore\menu\PlayerMenuUtility.class
 me\boost183\devcore\menu\PaginatedMenu.class
 me\boost183\devcore\command\CommandList.class
 me\boost183\devcore\colors\ColorTranslator.class
+me\boost183\devcore\chatinput\PlayerChatInput$EndReason.class
 me\boost183\devcore\command\SubCommand.class
+me\boost183\devcore\chatinput\PlayerChatInput$PlayerChatInputBuilder.class
 me\boost183\devcore\menu\MenuManager.class
 me\boost183\devcore\items\ItemUtils.class
 me\boost183\devcore\DevCore.class
