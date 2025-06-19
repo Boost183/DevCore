@@ -2,6 +2,7 @@ me\boost183\devcore\command\CommandManager.class
 me\boost183\devcore\menu\MenuListener.class
 me\boost183\devcore\chatinput\PlayerChatInput.class
 me\boost183\devcore\command\CoreCommand.class
+me\boost183\devcore\heads\CustomHeads.class
 me\boost183\devcore\exceptions\MenuManagerException.class
 me\boost183\devcore\menu\Menu.class
 me\boost183\devcore\exceptions\MenuManagerNotSetupException.class
